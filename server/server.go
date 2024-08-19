@@ -11,9 +11,9 @@ import (
 )
 
 var banners = map[string]string{
-	"standard":   "../public/standard.txt",
-	"thinkertoy": "../public/thinkertoy.txt",
-	"shadow":     "../public/shadow.txt",
+	"standard":   "/root/public/standard.txt",
+	"thinkertoy": "/root/public/thinkertoy.txt",
+	"shadow":     "/root/public/shadow.txt",
 }
 
 func AsciiServer(w http.ResponseWriter, r *http.Request) {

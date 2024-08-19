@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	basePath     = ".."
+	basePath     = "/root"
 	templatesDir = "templates"
 )
 

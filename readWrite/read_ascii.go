@@ -11,9 +11,9 @@ import (
 )
 
 var files = map[string]bool{
-	"../public/shadow.txt":     true,
-	"../public/standard.txt":   true,
-	"../public/thinkertoy.txt": true,
+	"/root/public/shadow.txt":     true,
+	"/root/public/standard.txt":   true,
+	"/root/public/thinkertoy.txt": true,
 }
 
 func ValidateFileName(file string) bool {

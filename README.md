@@ -1,4 +1,4 @@
-# ASCII Art Web Stylize
+# ASCII Art Web Dockerize
 
 This is a program that generates ASCII art based on a given string and banner style specified. The program uses a web interface that is appealing, intuitive and user friendly to displays the results. 
 

@@ -1,6 +1,5 @@
 # ASCII Art Web Dockerize
-
-This is a program that generates ASCII art based on a given string and banner style specified. The program uses a web interface that is appealing, intuitive and user friendly to displays the results. 
+This is a project that contains a (dockerfile) text/script file with instructions for building a docker image. It uses a lightweight executable packages that includes everything needed to run a piece of software. It is created for ascii-art-web, a program that generates ASCII art based on a given string and banner style specified. The program uses a web interface that is appealing, intuitive and user friendly to displays the results. 
 
 ## Features
 
@@ -16,20 +15,31 @@ This program is written purely in [Go](https://go.dev) language for the backend,
 1. Clone the repository:
 
     ```bash
-    git clone https://learn.zone01kisumu.ke/git/khahussein/ascii-art-web.git
+    git clone https://learn.zone01kisumu.ke/git/tabila/ascii-art-web-dockerize.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd ascii-art-web-stylize/cmd/
+    cd ascii-art-web-dockerize/
     ```
 
 ## Usage
 
+To build the docker image: 
+```bash
+docker build -t ascii .
+```
+To run the docker and start the server: 
+```bash
+docker run -p 8080:8080 ascii
+```
+
 Run the below command to start the server, then use the web browser to interact with the system [localhost](http://localhost:8080)
 
+
 ```bash
+cd cmd/
 go run .
 ```
 

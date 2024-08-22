@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set the metadata labels
+# Metadata labels
 LABEL_KEY="value"
 MAINTAINER="Doreen Onyango"
 MAINTAINER="Khalid Hussein"

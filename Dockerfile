@@ -17,8 +17,12 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o main ./cmd/main.go
 # Stage 2: Create a smaller image with just the binary and required files
 FROM alpine:latest
 
-LABEL key="value"
-# maintainer / version / description 
+# Metadata as described above
+LABEL maintainer="kherld.hussein@gmail.com" \
+      maintainer="datieno001@gmail.com" \
+      maintainer="tomabila3@gmail.com" \
+      version="1.0.0" \
+      description="This is a program that generates ASCII art based on a given string and banner style specified. The program uses a web interface that is appealing, intuitive and user friendly to displays the results.The application container built with Docker."
 
 # Set the Current Working Directory inside the container
 WORKDIR /root/

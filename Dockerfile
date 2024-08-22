@@ -17,7 +17,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o main ./cmd/main.go
 # Stage 2: Create a smaller image with just the binary and required files
 FROM alpine:latest
 
-# Metadata as described above
+# Metadata
 LABEL maintainer="kherld.hussein@gmail.com" \
       maintainer="datieno001@gmail.com" \
       maintainer="tomabila3@gmail.com" \
@@ -39,5 +39,5 @@ COPY --from=builder /app/templates /root/templates
 # Expose port 8080 to the outside world
 EXPOSE 8080
 
-# Command to run the executable
+# Run the executable
 CMD ["./main"]
